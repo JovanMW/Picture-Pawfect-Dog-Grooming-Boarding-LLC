@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Picture Pawfect Dog Grooming & Boarding LLC</title>
-  <meta name="description" content="Loving dog grooming and boarding where your baby is treated like family. 11 years of experience, built on trust and word of mouth. Request a spot today." />
+  <title>Picture Pawfect Dog Grooming & Boarding LLC | Where Your Dog Comes Home Happy</title>
+  <meta name="description" content="Loving dog grooming and boarding in a real home, not a kennel. 11 years of gentle, one-on-one care built on trust and word of mouth. Text to request a spot." />
   <meta property="og:title" content="Picture Pawfect Dog Grooming & Boarding LLC" />
-  <meta property="og:description" content="Loving dog grooming and boarding where your baby is treated like family. Your dog's comfort is always the top priority." />
+  <meta property="og:description" content="Where your dog comes home happy, safe, and loved. Gentle grooming and boarding with one-on-one attention — built on trust and word of mouth for 11 years." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#7A2E3A" />
 
@@ -50,6 +50,7 @@
     .btn-primary:hover { transform: translateY(-2px); background: #8C3545; box-shadow: 0 14px 30px rgba(122, 46, 58, 0.28); }
     .btn-secondary { background: transparent; color: var(--charcoal); border-color: rgba(59, 51, 48, 0.18); }
     .btn-secondary:hover { background: rgba(255, 255, 255, 0.5); }
+    .btn-microcopy { display: block; text-align: center; margin-top: 0.5rem; font-size: 0.88rem; color: var(--mocha); }
     .site-header { position: sticky; top: 0; z-index: 50; background: rgba(250, 247, 244, 0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(59, 51, 48, 0.06); }
     .nav { min-height: 84px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
     .brand { display: flex; flex-direction: column; line-height: 1; flex-shrink: 0; }
@@ -63,6 +64,8 @@
     .nav-links { display: flex; align-items: center; gap: 1.15rem; flex-wrap: wrap; justify-content: flex-end; }
     .nav-links a { font-size: 0.96rem; color: var(--charcoal); opacity: 0.9; transition: var(--transition); }
     .nav-links a:hover { opacity: 1; color: var(--burgundy); }
+
+    /* Hero */
     .hero { padding: 4rem 0 5rem; }
     .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2.5rem; align-items: center; }
     .hero-copy h1 { font-family: "Playfair Display", serif; font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.05; letter-spacing: -0.03em; max-width: 16ch; }
@@ -76,9 +79,20 @@
     .hero-badge { position: relative; z-index: 1; margin-left: auto; max-width: 300px; background: rgba(255, 255, 255, 0.92); border: 1px solid rgba(59, 51, 48, 0.08); border-radius: 20px; padding: 1rem 1rem 0.95rem; box-shadow: 0 12px 30px rgba(59, 51, 48, 0.10); }
     .hero-badge strong { display: block; font-size: 1rem; margin-bottom: 0.35rem; color: var(--burgundy); }
     .hero-badge p { color: var(--mocha); font-size: 0.92rem; line-height: 1.45; }
+
+    /* Trust Strip */
     .trust-strip { padding: 1.25rem 0; border-top: 1px solid rgba(59, 51, 48, 0.08); border-bottom: 1px solid rgba(59, 51, 48, 0.08); background: rgba(255, 255, 255, 0.35); }
     .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
     .trust-item { text-align: center; padding: 0.75rem; color: var(--charcoal); font-weight: 700; font-size: 0.95rem; }
+
+    /* How It Works */
+    .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; counter-reset: step; }
+    .step-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.6rem; text-align: center; position: relative; }
+    .step-number { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: var(--burgundy); color: var(--white); font-family: "Playfair Display", serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 1rem; }
+    .step-card h3 { font-family: "Playfair Display", serif; font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .step-card p { color: var(--mocha); font-size: 1rem; }
+
+    /* About */
     .split { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 2.5rem; align-items: center; }
     .image-panel { background: var(--blush); border-radius: var(--radius-lg); overflow: hidden; min-height: 360px; box-shadow: var(--shadow); border: 1px solid rgba(59, 51, 48, 0.06); }
     .image-panel img { width: 100%; height: 100%; object-fit: cover; }
@@ -90,6 +104,8 @@
     .feature { background: rgba(255, 255, 255, 0.65); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem; }
     .feature h4 { margin-bottom: 0.35rem; font-size: 1.05rem; color: var(--forest); }
     .feature p { color: var(--mocha); font-size: 1rem; }
+
+    /* Services */
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
     .service-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.6rem; transition: var(--transition); }
     .service-card:hover { transform: translateY(-3px); box-shadow: 0 22px 50px rgba(59, 51, 48, 0.10); }
@@ -101,6 +117,14 @@
     .service-card > p { color: var(--mocha); margin-bottom: 1rem; }
     .service-card ul { list-style: none; display: grid; gap: 0.6rem; color: var(--charcoal); font-size: 1rem; }
     .service-card li::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); margin-right: 0.55rem; vertical-align: middle; }
+
+    /* Inline testimonial */
+    .inline-testimonial { margin-top: 2rem; background: linear-gradient(135deg, rgba(143, 168, 126, 0.06), rgba(232, 180, 184, 0.08)); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; display: flex; gap: 1rem; align-items: flex-start; }
+    .inline-testimonial::before { content: "\201C"; font-family: "Playfair Display", serif; font-size: 2.5rem; line-height: 1; color: var(--dusty-pink); flex-shrink: 0; }
+    .inline-testimonial p { color: var(--charcoal); font-size: 1rem; font-style: italic; }
+    .inline-testimonial .review-author { color: var(--burgundy); font-size: 0.88rem; font-weight: 700; font-style: normal; margin-top: 0.35rem; }
+
+    /* Pricing */
     .pricing-wrap { margin-top: 2rem; }
     .pricing-note-top { background: linear-gradient(135deg, rgba(143, 168, 126, 0.1), rgba(232, 180, 184, 0.1)); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1rem 1.25rem; margin-bottom: 1.5rem; color: var(--mocha); font-size: 1rem; }
     .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.25rem; }
@@ -111,11 +135,27 @@
     .pricing-table li { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 0; border-bottom: 1px solid rgba(59, 51, 48, 0.07); font-size: 1rem; }
     .pricing-table li:last-child { border-bottom: none; }
     .pricing-table .price { font-weight: 700; color: var(--burgundy); white-space: nowrap; }
+
+    /* Reviews */
     .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
     .review-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.5rem; position: relative; }
     .review-card::before { content: "\201C"; font-family: "Playfair Display", serif; font-size: 3.5rem; line-height: 1; color: var(--dusty-pink); position: absolute; top: 1rem; right: 1.25rem; opacity: 0.5; }
     .review-card p { color: var(--charcoal); margin-bottom: 1rem; position: relative; }
     .review-author { color: var(--burgundy); font-size: 0.92rem; font-weight: 700; }
+
+    /* Your First Visit */
+    .first-visit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; align-items: start; }
+    .first-visit-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.8rem; }
+    .first-visit-card h3 { font-family: "Playfair Display", serif; font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--forest); }
+    .first-visit-card ul { list-style: none; display: grid; gap: 0.6rem; }
+    .first-visit-card li { font-size: 1rem; color: var(--charcoal); }
+    .first-visit-card li::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--sage); margin-right: 0.55rem; vertical-align: middle; }
+    .first-visit-card p { color: var(--mocha); font-size: 1rem; }
+    .reassurance-box { margin-top: 2rem; background: linear-gradient(135deg, rgba(143, 168, 126, 0.08), rgba(122, 46, 58, 0.04)); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; }
+    .reassurance-box p { color: var(--mocha); font-size: 1rem; }
+    .reassurance-box strong { color: var(--charcoal); }
+
+    /* Family */
     .family-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 2rem; }
     .family-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); overflow: hidden; }
     .family-photo { height: 180px; background: var(--blush); }
@@ -130,20 +170,32 @@
     .spotlight-badge { display: inline-block; background: var(--burgundy); color: var(--white); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.35rem 0.85rem; border-radius: 999px; margin-bottom: 0.75rem; }
     .spotlight-body h3 { font-family: "Playfair Display", serif; font-size: 1.8rem; margin-bottom: 0.5rem; }
     .spotlight-body p { color: var(--mocha); font-size: 1rem; }
-    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
-    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.4rem; }
-    .faq-item h4 { margin-bottom: 0.55rem; font-size: 1.1rem; color: var(--charcoal); }
-    .faq-item p { color: var(--mocha); font-size: 1rem; }
+
+    /* Policies */
     .policies-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
     .policy-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.4rem; }
     .policy-card h4 { margin-bottom: 0.5rem; font-size: 1.05rem; display: flex; align-items: center; gap: 0.5rem; }
     .policy-card h4 .policy-icon { color: var(--burgundy); font-size: 1.1rem; }
     .policy-card p { color: var(--mocha); font-size: 1rem; }
+
+    /* FAQ */
+    .faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 2rem; }
+    .faq-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 1.4rem; }
+    .faq-item h4 { margin-bottom: 0.55rem; font-size: 1.1rem; color: var(--charcoal); }
+    .faq-item p { color: var(--mocha); font-size: 1rem; }
+
+    /* CTA */
     .cta-panel { background: linear-gradient(135deg, #f5e6e0 0%, #eeddd5 50%, rgba(143, 168, 126, 0.12) 100%); border: 1px solid var(--border); border-radius: var(--radius-lg); box-shadow: var(--shadow); padding: 2.5rem; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1.5rem; }
     .cta-panel h3 { font-family: "Playfair Display", serif; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.1; margin-bottom: 0.6rem; }
     .cta-panel p { color: var(--mocha); max-width: 600px; }
     .contact-details { margin-top: 1.25rem; display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; font-size: 1rem; color: var(--mocha); }
     .contact-details span { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+    /* Mid-page CTA */
+    .mid-cta { text-align: center; padding: 3rem 0; }
+    .mid-cta .btn { font-size: 1.05rem; padding: 1rem 2rem; }
+
+    /* Footer */
     .footer { padding: 2rem 0 2.5rem; border-top: 1px solid rgba(59, 51, 48, 0.08); background: rgba(255, 255, 255, 0.25); }
     .footer-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; color: var(--mocha); font-size: 0.95rem; }
     .footer-brand { color: var(--burgundy); font-family: "Playfair Display", serif; font-size: 1.1rem; }
@@ -152,10 +204,11 @@
     .footer-links a:hover { color: var(--burgundy); }
     .muted { color: var(--mocha); }
     .floral-divider { text-align: center; padding: 1rem 0; color: var(--dusty-pink); font-size: 1.5rem; letter-spacing: 0.5rem; opacity: 0.5; user-select: none; }
+
     @media (max-width: 1080px) {
       .hero-grid, .split, .cta-panel { grid-template-columns: 1fr; }
-      .services-grid, .reviews-grid, .family-grid, .faq-grid, .policies-grid, .trust-grid { grid-template-columns: repeat(2, 1fr); }
-      .spotlight { grid-template-columns: 1fr; }
+      .services-grid, .reviews-grid, .family-grid, .faq-grid, .policies-grid, .trust-grid, .steps-grid { grid-template-columns: repeat(2, 1fr); }
+      .spotlight, .first-visit-grid { grid-template-columns: 1fr; }
       .spotlight-photo { height: 220px; }
       .hero-card { min-height: 300px; }
       .image-panel { min-height: 280px; }
@@ -167,12 +220,12 @@
       .nav-links.open { display: flex; }
       .nav-links a { padding: 0.5rem 0; font-size: 1rem; }
       .nav-links .btn { width: 100%; margin-top: 0.25rem; }
-      .services-grid, .reviews-grid, .family-grid, .faq-grid, .policies-grid, .trust-grid, .feature-list { grid-template-columns: 1fr; }
+      .services-grid, .reviews-grid, .family-grid, .faq-grid, .policies-grid, .trust-grid, .feature-list, .steps-grid, .first-visit-grid { grid-template-columns: 1fr; }
       .hero { padding-top: 2.5rem; }
       .section { padding: 4rem 0; }
       .hero-card { min-height: 260px; }
       .hero-copy h1 { max-width: 14ch; }
-      .about-card, .service-card, .review-card, .faq-item, .pricing-card, .policy-card, .cta-panel { padding: 1.25rem; }
+      .about-card, .service-card, .review-card, .faq-item, .pricing-card, .policy-card, .cta-panel, .first-visit-card { padding: 1.25rem; }
       .spotlight { padding: 1.25rem; }
     }
   </style>
@@ -194,12 +247,11 @@
       </button>
 
       <nav class="nav-links">
-        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
         <a href="#services">Services</a>
+        <a href="#about">About</a>
         <a href="#pricing">Pricing</a>
         <a href="#reviews">Reviews</a>
-        <a href="#family">Pawfect Family</a>
-        <a href="#policies">Policies</a>
         <a href="#faq">FAQ</a>
         <a href="#contact" class="btn btn-primary">Request a Spot</a>
       </nav>
@@ -212,22 +264,24 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Dog Grooming & Boarding</span>
-          <h1>Where Your Baby Is <span class="highlight">Treated Like Family</span></h1>
+          <span class="eyebrow">Trusted by Dog Parents for 11 Years</span>
+          <h1>Where Your Dog Comes Home <span class="highlight">Happy, Safe, and Loved</span></h1>
           <p>
-            Your dog matters to me more than anything when they're in my care.
             The best part of what I do is loving on other people's babies and sending them home safe.
-            Picture Pawfect is built on that love, that trust, and the kind of personal attention
-            your baby deserves.
+            Your dog gets one-on-one attention, a gentle touch, and the kind of care I'd want for my own.
+            No rushing. No stress. Just real love and a whole lot of patience.
           </p>
 
           <div class="btn-group">
-            <a href="#contact" class="btn btn-primary">Request a Spot</a>
-            <a href="#pricing" class="btn btn-secondary">View Pricing</a>
+            <div>
+              <a href="#contact" class="btn btn-primary">Request a Spot for Your Dog</a>
+              <span class="btn-microcopy">I respond to texts within the hour</span>
+            </div>
+            <a href="#services" class="btn btn-secondary">See What I Offer</a>
           </div>
 
           <div class="hero-trust">
-            <span>11 years of experience</span>
+            <span>One-on-one attention, always</span>
             <span>Your dog's comfort comes first</span>
             <span>Built on trust and word of mouth</span>
           </div>
@@ -237,9 +291,9 @@
           <!-- TODO: Replace with real photo of Sera with a dog -->
           <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80" alt="Happy dog being lovingly cared for" />
           <div class="hero-badge">
-            <strong>Loving care that feels like home</strong>
+            <strong>Not a kennel. A real home.</strong>
             <p>
-              A warm, personal experience where your dog is known, loved, and always safe.
+              Every dog gets personal, one-on-one care in a warm, loving environment.
             </p>
           </div>
         </div>
@@ -249,12 +303,133 @@
     <!-- ===== TRUST STRIP ===== -->
     <section class="trust-strip">
       <div class="container trust-grid">
-        <div class="trust-item">Gentle, caring approach</div>
+        <div class="trust-item">One-on-one care, every visit</div>
         <div class="trust-item">Grown by word of mouth</div>
-        <div class="trust-item">Dogs only, all breeds</div>
-        <div class="trust-item">Your dog's comfort is #1</div>
+        <div class="trust-item">All breeds, all personalities</div>
+        <div class="trust-item">I stop when they've had enough</div>
       </div>
     </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section-title">Getting started is easy.</h2>
+        <p class="section-subtitle">
+          No online booking portals. No automated systems. Just real, personal communication between you and me.
+        </p>
+
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Text Me</h3>
+            <p>
+              Send me a text with your dog's name, breed, and what they need. I don't answer unknown numbers (too much spam!), so texting is the best way to reach me. You can also call and leave a voicemail.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>We Chat</h3>
+            <p>
+              I'll ask about your dog's personality, any past grooming experience, and what you're looking for. This helps me understand your baby so I can give them the best care possible.
+            </p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Your Dog Gets Loved</h3>
+            <p>
+              Drop off your baby and pick them up happy, fresh, and safe. I work at their pace, give them my full attention, and treat them like one of my own.
+            </p>
+          </div>
+        </div>
+
+        <div class="inline-testimonial">
+          <div>
+            <p>"You can tell she genuinely loves animals. My baby came home looking amazing and I felt completely at ease leaving him with her."</p>
+            <div class="review-author">&mdash; Client Review</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="floral-divider" aria-hidden="true">&hearts; &middot; &hearts; &middot; &hearts;</div>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <span class="eyebrow">What I Offer</span>
+        <h2 class="section-title">Honest care, done with love.</h2>
+        <p class="section-subtitle">
+          I keep things simple and personal. Every dog gets one-on-one attention and the kind of care
+          I'd want for my own babies. No assembly lines. No rushing through to get to the next dog.
+        </p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon groom">&#9986;</div>
+            <h3>Dog Grooming</h3>
+            <p>
+              A full grooming experience that leaves your baby feeling fresh, clean, comfortable, and loved.
+              I work at your dog's pace, not mine.
+            </p>
+            <ul>
+              <!-- TODO: Update with Sera's actual service inclusions -->
+              <li>Bathing, coat care, and styling based on your dog's needs</li>
+              <li>Calm, gentle approach for every personality</li>
+              <li>I stop if your dog is stressed &mdash; their comfort comes first</li>
+              <li>Attention to detail for that picture pawfect finish</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon board">&#9750;</div>
+            <h3>Boarding</h3>
+            <p>
+              A warm, loving home away from home &mdash; not a cold kennel with rows of cages. Your dog stays
+              where they're known, comfortable, and truly cared for.
+            </p>
+            <ul>
+              <!-- TODO: Update with Sera's actual boarding inclusions -->
+              <li>Loving care in a trusted home environment</li>
+              <li>Personal attention, not a crowded room</li>
+              <li>Your dog is part of the family while they're here</li>
+              <li>Sent home safe and happy, every time</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon extras">&#10047;</div>
+            <h3>Add-Ons & Extras</h3>
+            <p>
+              A little something extra for dogs who deserve that special touch.
+              Ask about what's available when you request a spot.
+            </p>
+            <ul>
+              <!-- TODO: Update with Sera's actual add-on list -->
+              <li>Extra pampering and finishing touches</li>
+              <li>Special treatments based on coat type</li>
+              <li>Ask about options when you reach out</li>
+              <li>Tailored to your dog's needs</li>
+            </ul>
+          </article>
+        </div>
+
+        <p style="margin-top: 1.5rem; color: var(--mocha);">
+          I only work on dogs. I love all breeds, all sizes, all personalities. Age can be a factor &mdash; not a deal breaker &mdash;
+          but a heartfelt conversation between me and the pet parent has to happen first when it comes to senior dogs, just because of the risks involved.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== MID-PAGE CTA ===== -->
+    <div class="mid-cta">
+      <div class="container">
+        <a href="#contact" class="btn btn-primary">Request a Spot for Your Dog</a>
+        <span class="btn-microcopy">Text me &mdash; I usually respond within the hour</span>
+      </div>
+    </div>
 
     <!-- ===== ABOUT / MEET SERA ===== -->
     <section class="section" id="about">
@@ -266,7 +441,7 @@
 
         <div class="about-card">
           <span class="eyebrow">Meet Sera</span>
-          <h2 class="section-title">A huge animal lover with a gentle hand and a full heart.</h2>
+          <h2 class="section-title">The person behind every groom, every belly rub, every safe send-home.</h2>
           <p>
             Picture Pawfect started the way the best things do &mdash; with love. I already had a basic knowledge
             of grooming my own dogs, and I've always had a deep love for animals. After 11 years of grooming
@@ -315,127 +490,6 @@
 
     <div class="floral-divider" aria-hidden="true">&hearts; &middot; &hearts; &middot; &hearts;</div>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="section" id="services">
-      <div class="container">
-        <span class="eyebrow">What I Offer</span>
-        <h2 class="section-title">Honest care, done with love.</h2>
-        <p class="section-subtitle">
-          I keep things simple and personal. Every dog gets one-on-one attention and the kind of care
-          I'd want for my own babies.
-        </p>
-
-        <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon groom">&#9986;</div>
-            <h3>Dog Grooming</h3>
-            <p>
-              A full grooming experience that leaves your baby feeling fresh, clean, comfortable, and loved.
-              I work at your dog's pace, not mine.
-            </p>
-            <ul>
-              <!-- TODO: Update with Sera's actual service inclusions -->
-              <li>Bathing, coat care, and styling based on your dog's needs</li>
-              <li>Calm, gentle approach for every personality</li>
-              <li>I stop if your dog is stressed &mdash; their comfort comes first</li>
-              <li>Attention to detail for that picture pawfect finish</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon board">&#9750;</div>
-            <h3>Boarding</h3>
-            <p>
-              A warm, loving home away from home. Not a cold kennel. Your dog stays where they're known,
-              comfortable, and truly cared for.
-            </p>
-            <ul>
-              <!-- TODO: Update with Sera's actual boarding inclusions -->
-              <li>Loving care in a trusted home environment</li>
-              <li>Personal attention, not a crowded facility</li>
-              <li>Your dog is part of the family while they're here</li>
-              <li>Sent home safe and happy, every time</li>
-            </ul>
-          </article>
-
-          <article class="service-card">
-            <div class="service-icon extras">&#10047;</div>
-            <h3>Add-Ons & Extras</h3>
-            <p>
-              A little something extra for dogs who deserve that special touch.
-              Ask about what's available when you request a spot.
-            </p>
-            <ul>
-              <!-- TODO: Update with Sera's actual add-on list -->
-              <li>Extra pampering and finishing touches</li>
-              <li>Special treatments based on coat type</li>
-              <li>Ask about options when you reach out</li>
-              <li>Tailored to your dog's needs</li>
-            </ul>
-          </article>
-        </div>
-
-        <p style="margin-top: 1.5rem; color: var(--mocha);">
-          I only work on dogs. I love all breeds, all sizes, all personalities. Age can be a factor &mdash; not a deal breaker &mdash;
-          but a heartfelt conversation between me and the pet parent has to happen first when it comes to senior dogs, just because of the risks involved.
-        </p>
-      </div>
-    </section>
-
-    <!-- ===== PRICING ===== -->
-    <section class="section" id="pricing" style="background: rgba(255,255,255,0.35);">
-      <div class="container">
-        <span class="eyebrow">Pricing</span>
-        <h2 class="section-title">Straightforward pricing for real, quality care.</h2>
-        <p class="section-subtitle">
-          Every dog is different, so pricing can vary based on breed, size, coat condition, behavior, and service needs.
-          Here's a starting point so you know what to expect.
-        </p>
-
-        <div class="pricing-wrap">
-          <div class="pricing-note-top">
-            Pricing varies by breed, size, coat condition, temperament, and service needs.
-            The numbers below are starting points &mdash; we'll confirm your dog's pricing when you reach out.
-          </div>
-
-          <div class="pricing-grid">
-            <div class="pricing-card">
-              <h3>Grooming</h3>
-              <p>Full grooming tailored to your dog's breed and coat type.</p>
-              <ul class="pricing-table">
-                <!-- TODO: Replace with Sera's actual grooming prices -->
-                <li><span>Small breeds</span> <span class="price">Pricing coming soon</span></li>
-                <li><span>Medium breeds</span> <span class="price">Pricing coming soon</span></li>
-                <li><span>Large breeds</span> <span class="price">Pricing coming soon</span></li>
-                <li><span>XL / Giant breeds</span> <span class="price">Pricing coming soon</span></li>
-              </ul>
-            </div>
-
-            <div class="pricing-card">
-              <h3>Boarding</h3>
-              <p>A warm, loving home for your dog while you're away.</p>
-              <ul class="pricing-table">
-                <!-- TODO: Replace with Sera's actual boarding prices -->
-                <li><span>Per night</span> <span class="price">Pricing coming soon</span></li>
-                <li><span>Extended stays</span> <span class="price">Pricing coming soon</span></li>
-              </ul>
-            </div>
-
-            <div class="pricing-card">
-              <h3>Add-Ons</h3>
-              <p>A little extra love for your dog's visit.</p>
-              <ul class="pricing-table">
-                <!-- TODO: Replace with Sera's actual add-on prices -->
-                <li><span>Ask about available extras</span> <span class="price">Varies</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="floral-divider" aria-hidden="true">&hearts; &middot; &hearts; &middot; &hearts;</div>
-
     <!-- ===== REVIEWS ===== -->
     <section class="section" id="reviews">
       <div class="container">
@@ -473,6 +527,108 @@
         </div>
       </div>
     </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="section" id="pricing" style="background: rgba(255,255,255,0.35);">
+      <div class="container">
+        <span class="eyebrow">Pricing</span>
+        <h2 class="section-title">Straightforward pricing. No surprises.</h2>
+        <p class="section-subtitle">
+          Every dog is different, so pricing can vary based on breed, size, coat condition, behavior, and service needs.
+          Here's a starting point so you know what to expect. I'll always confirm pricing before we start.
+        </p>
+
+        <div class="pricing-wrap">
+          <div class="pricing-note-top">
+            You're not paying for a quick in-and-out job. You're paying for patience, one-on-one attention, and someone who puts
+            your dog's comfort above everything else &mdash; including the clock.
+          </div>
+
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <h3>Grooming</h3>
+              <p>Full grooming tailored to your dog's breed and coat type. Every dog gets my complete attention.</p>
+              <ul class="pricing-table">
+                <!-- TODO: Replace with Sera's actual grooming prices -->
+                <li><span>Small breeds</span> <span class="price">Starting at &mdash; TBD</span></li>
+                <li><span>Medium breeds</span> <span class="price">Starting at &mdash; TBD</span></li>
+                <li><span>Large breeds</span> <span class="price">Starting at &mdash; TBD</span></li>
+                <li><span>XL / Giant breeds</span> <span class="price">Starting at &mdash; TBD</span></li>
+              </ul>
+            </div>
+
+            <div class="pricing-card">
+              <h3>Boarding</h3>
+              <p>A warm, loving home for your dog while you're away. Not a cage in a room &mdash; real home care.</p>
+              <ul class="pricing-table">
+                <!-- TODO: Replace with Sera's actual boarding prices -->
+                <li><span>Per night</span> <span class="price">Starting at &mdash; TBD</span></li>
+                <li><span>Extended stays</span> <span class="price">Starting at &mdash; TBD</span></li>
+              </ul>
+            </div>
+
+            <div class="pricing-card">
+              <h3>Add-Ons</h3>
+              <p>A little extra love for your dog's visit.</p>
+              <ul class="pricing-table">
+                <!-- TODO: Replace with Sera's actual add-on prices -->
+                <li><span>Ask about available extras</span> <span class="price">Varies</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="inline-testimonial" style="margin-top: 1.5rem;">
+            <div>
+              <p>"I trust her fully with my dog. That peace of mind is everything. She treats them like family and it shows."</p>
+              <div class="review-author">&mdash; Repeat Client</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== YOUR FIRST VISIT ===== -->
+    <section class="section" id="first-visit">
+      <div class="container">
+        <span class="eyebrow">Your First Visit</span>
+        <h2 class="section-title">What to expect when your dog visits me.</h2>
+        <p class="section-subtitle">
+          I know it's not easy leaving your baby somewhere new. Here's what happens so you can feel completely comfortable.
+        </p>
+
+        <div class="first-visit-grid">
+          <div class="first-visit-card">
+            <h3>Before the Visit</h3>
+            <ul>
+              <li>We'll chat about your dog's personality and any past grooming experience</li>
+              <li>Let me know about any anxiety, sensitivities, or health concerns</li>
+              <li>Share any behavior notes so I can give them the best experience</li>
+              <li>Make sure your dog's vaccinations are up to date</li>
+            </ul>
+          </div>
+
+          <div class="first-visit-card">
+            <h3>During the Visit</h3>
+            <ul>
+              <li>Your dog gets my full, one-on-one attention &mdash; no other dogs being worked on at the same time</li>
+              <li>I go at their pace, not mine, and take breaks when needed</li>
+              <li>If they're stressed or overwhelmed, I stop &mdash; even if the groom isn't finished</li>
+              <li>Calm music, gentle hands, and a whole lot of patience</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reassurance-box">
+          <p>
+            <strong>Have an anxious dog?</strong> That's okay. Some of my best bonds have been with dogs that
+            other groomers struggled with. I don't force anything. I take my time, build trust, and let your dog
+            tell me what they're comfortable with. I'd rather me do it with patience than someone else push through.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="floral-divider" aria-hidden="true">&hearts; &middot; &hearts; &middot; &hearts;</div>
 
     <!-- ===== PAWFECT FAMILY ===== -->
     <section class="section" id="family" style="background: rgba(255,255,255,0.3);">
@@ -605,7 +761,7 @@
 
           <article class="policy-card">
             <h4><span class="policy-icon">&#9829;</span> Behavior & Temperament</h4>
-            <p>Let me know about any behavioral concerns upfront. I can handle it &mdash; I just need to know so I can give your dog the best experience.</p>
+            <p>Let me know about any behavioral concerns upfront. I can work with it &mdash; I just need to know so I can give your dog the best experience.</p>
           </article>
 
           <article class="policy-card">
@@ -641,18 +797,28 @@
           </article>
 
           <article class="faq-item">
-            <h4>Do you accept new clients?</h4>
-            <p>Yes, when I have availability. Reaching out first helps me make sure we're a good fit for each other.</p>
+            <h4>What if my dog is anxious or nervous?</h4>
+            <p>That's completely okay. I take my time, go at their pace, and build trust before I do anything. Some of my strongest bonds have been with dogs other groomers struggled with. Patience changes everything.</p>
           </article>
 
           <article class="faq-item">
             <h4>Why does pricing vary?</h4>
-            <p>Every dog is different. Breed, size, coat condition, behavior, and the services your dog needs all play a role. I'll let you know up front.</p>
+            <p>Every dog is different. Breed, size, coat condition, behavior, and the services your dog needs all play a role. I'll let you know up front &mdash; no surprises.</p>
+          </article>
+
+          <article class="faq-item">
+            <h4>Is my dog in a cage all day?</h4>
+            <p>No. This isn't a big commercial operation with rows of kennels. Your dog gets personal attention in a real home environment where they're comfortable and cared for.</p>
           </article>
 
           <article class="faq-item">
             <h4>What should I know before boarding?</h4>
             <p>Any care notes, routines, behavior details, and health info should be shared when you reach out. The more I know, the better I can care for your baby.</p>
+          </article>
+
+          <article class="faq-item">
+            <h4>Do you accept new clients?</h4>
+            <p>Yes, when I have availability. Reaching out first helps me make sure we're a good fit for each other.</p>
           </article>
 
           <article class="faq-item">
@@ -689,8 +855,8 @@
               <span>Facebook Messenger</span>
             </div>
             <p style="margin-top: 0.75rem; color: var(--mocha);">
-              When you reach out, let me know about any past grooming experience your dog has had
-              and a little about their behavior or temperament. That helps me take the best care of them.
+              When you reach out, let me know your dog's name, breed, and a little about their personality.
+              That helps me give them the best care from the very first visit.
             </p>
           </div>
 
@@ -710,7 +876,7 @@
     <div class="container footer-row">
       <div>
         <span class="footer-brand">Picture Pawfect</span><br />
-        <span class="muted">Loving care that feels like home.</span>
+        <span class="muted">Where your dog comes home happy, safe, and loved.</span>
       </div>
 
       <div class="footer-links">
