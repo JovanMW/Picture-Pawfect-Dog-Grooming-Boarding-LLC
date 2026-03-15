@@ -39,7 +39,8 @@ body {
   font-family: "Lato", sans-serif;
   color: var(--charcoal);
   background: var(--ivory);
-  line-height: 1.65;
+  font-size: 1.05rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -76,7 +77,7 @@ a {
 .section-subtitle {
   max-width: 680px;
   color: var(--mocha);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .eyebrow {
@@ -238,17 +239,17 @@ a {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 2rem;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .hero-copy h1 {
   font-family: "Playfair Display", serif;
-  font-size: clamp(2.7rem, 6vw, 4.6rem);
-  line-height: 1;
-  letter-spacing: -0.04em;
-  max-width: 14ch;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
 }
 
 .hero-copy h1 .highlight {
@@ -258,8 +259,9 @@ a {
 .hero-copy > p {
   margin-top: 1.2rem;
   max-width: 580px;
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   color: var(--mocha);
+  line-height: 1.7;
 }
 
 .hero-trust {
@@ -293,7 +295,7 @@ a {
   border: 1px solid rgba(59, 51, 48, 0.07);
   border-radius: 28px;
   overflow: hidden;
-  min-height: 540px;
+  min-height: 380px;
   box-shadow: var(--shadow);
   display: flex;
   align-items: flex-end;
@@ -360,8 +362,8 @@ a {
 
 .split {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 2rem;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -369,7 +371,7 @@ a {
   background: var(--blush);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  min-height: 520px;
+  min-height: 360px;
   box-shadow: var(--shadow);
   border: 1px solid rgba(59, 51, 48, 0.06);
 }
@@ -390,6 +392,10 @@ a {
 
 .about-card p + p {
   margin-top: 1rem;
+}
+
+.about-card p {
+  font-size: 1.05rem;
 }
 
 .about-story {
@@ -419,13 +425,13 @@ a {
 
 .feature h4 {
   margin-bottom: 0.35rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--forest);
 }
 
 .feature p {
   color: var(--mocha);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* ---- Services ---- */
@@ -482,7 +488,7 @@ a {
   display: grid;
   gap: 0.6rem;
   color: var(--charcoal);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .service-card li::before {
@@ -633,7 +639,7 @@ a {
 }
 
 .family-photo {
-  height: 250px;
+  height: 180px;
   background: var(--blush);
 }
 
@@ -664,7 +670,7 @@ a {
 
 .family-body p {
   color: var(--mocha);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* Dog of the Month Spotlight */
@@ -676,7 +682,7 @@ a {
   padding: 2rem;
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 2rem;
   align-items: center;
 }
@@ -684,7 +690,7 @@ a {
 .spotlight-photo {
   border-radius: var(--radius-md);
   overflow: hidden;
-  height: 280px;
+  height: 200px;
   background: var(--blush);
 }
 
@@ -737,13 +743,13 @@ a {
 
 .faq-item h4 {
   margin-bottom: 0.55rem;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: var(--charcoal);
 }
 
 .faq-item p {
   color: var(--mocha);
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 /* ---- Policies ---- */
@@ -778,7 +784,7 @@ a {
 
 .policy-card p {
   color: var(--mocha);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 /* ---- Contact / CTA ---- */
@@ -904,11 +910,11 @@ a {
   }
 
   .hero-card {
-    min-height: 420px;
+    min-height: 300px;
   }
 
   .image-panel {
-    min-height: 380px;
+    min-height: 280px;
   }
 }
 
@@ -962,7 +968,7 @@ a {
   }
 
   .hero-card {
-    min-height: 340px;
+    min-height: 260px;
   }
 
   .hero-copy h1 {
