@@ -10,7 +10,7 @@
   --sage: #8FA87E;
   --forest: #4A6741;
   --burgundy: #7A2E3A;
-  --rose: #C75B7A;
+
   --dusty-pink: #E8B4B8;
   --charcoal: #3B3330;
   --mocha: #6E5F58;
@@ -270,7 +270,7 @@ a {
   gap: 0.6rem 1.25rem;
   margin-top: 1.5rem;
   color: var(--mocha);
-  font-size: 0.93rem;
+  font-size: 0.98rem;
 }
 
 .hero-trust span {
@@ -515,7 +515,7 @@ a {
   padding: 1rem 1.25rem;
   margin-bottom: 1.5rem;
   color: var(--mocha);
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .pricing-grid {
@@ -544,7 +544,7 @@ a {
 .pricing-card > p {
   color: var(--mocha);
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .pricing-table {
@@ -560,7 +560,7 @@ a {
   align-items: center;
   padding: 0.8rem 0;
   border-bottom: 1px solid rgba(59, 51, 48, 0.07);
-  font-size: 0.96rem;
+  font-size: 1rem;
 }
 
 .pricing-table li:last-child {
@@ -571,12 +571,6 @@ a {
   font-weight: 700;
   color: var(--burgundy);
   white-space: nowrap;
-}
-
-.pricing-placeholder {
-  color: var(--mocha);
-  font-style: italic;
-  font-size: 0.95rem;
 }
 
 /* ---- Reviews ---- */
@@ -818,7 +812,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1.5rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--mocha);
 }
 
